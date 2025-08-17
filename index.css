@@ -221,76 +221,6 @@ footer {
   font-size: 0.9rem;
 }
 
-.storyStory > div {
-  display: flex;
-  justify-content: space-between;
-  gap: 3rem;
-  flex-wrap: wrap; /* allows items to move to next row */
-  box-sizing: border-box;
-}
-
-.mystory {
-  width: 600px;
-}
-
-.education {
-  background-color: #87878718;
-  width: 500px;
-  height: auto; /* better than fixed height */
-  padding: 32px;
-}
-
-/* Mobile / Tablet screens */
-@media (max-width: 768px) {
-  .storyStory > div {
-    flex-direction: column; 
-    align-items: center;  
-  }
-
-  .mystory, 
-  .education {
-    width: 100%; /* full width on mobile */
-  }
-}
-
-.storyStory > div {
-  display: flex;
-  justify-content: space-between;
-  gap: 3rem;
-  flex-wrap: wrap; /* allows items to move to next row */
-  box-sizing: border-box;
-}
-
-/* Large screen: side by side (already working) */
-.mystory {
-  width: 600px;
-}
-
-.education {
-  background-color: #87878718;
-  width: 500px;
-  height: auto; /* better than fixed height */
-  padding: 32px;
-}
-
-/* Mobile / Tablet screens */
-@media (min-width: 318px) and (max-width: 500px) {
-  .storyStory > div {
-    background-color: yellow;
-    flex-direction: column; /* stack vertically */
-    align-items: center;    /* center them */
-    word-wrap: break-word;
-  }
-
-  .mystory, 
-  .education {
-    width: 100%; /* full width on mobile */
-    padding: 1rem;
-    align-items: center;
-    text-align: center;
-  }
-}
-
 /* ===== MEDIA QUERIES ===== */
 @media (max-width: 992px) {
   .navbar {
@@ -390,4 +320,5 @@ footer {
     text-align: center;
     display: block;
   }
+
 }
