@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Sets character encoding for the document -->
+  <meta charset="UTF-8">
+  <!-- Ensures proper rendering and touch zooming on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Links external CSS stylesheet for styling -->
+  <link rel="stylesheet" href="index.css">
+  <!-- Sets the page title shown on the browser tab -->
+  <title>Fathiu Bello</title>
+</head>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('links-container');
+
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+<body>
+
+  <!-- Developer's personal note and message to future viewers -->
+  <!-- This section is the website's navigation bar -->
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div id="name-logo">
+      <a href="#home-container">Fathiu Bello</a>
+    </div>
+
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+
+    <nav id="links-container">
+      <a class="link-top" href="#home-container">Home</a>
+      <a class="link-top" href="#about">About</a>
+      <a class="link-top" href="#services-container">Services</a>
+      <a class="link-top" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home-container">
+    <img class="devImg" src="./asset/fathiu.jpg" alt="Fathiu Bello">
+    <h1 class="name">Fathiu Bello</h1>
+    <h2>Full-Stack Web Developer</h2>
+    <p class="dev-function">
+      Creating beautiful, functional and user-friendly websites with modern technologies.
+    </p>
+    <div class="home-buttons">
+      <a class="home-button home1" href="#services">View Services</a>
+      <a class="home-button home2" href="#contact">Get In Touch</a>
+    </div>
+  </section>
+  
+  <!-- About section: Background and story of the developer -->
+  <div class="aboutTogether" style="background-color: rgba(250, 254, 255, 0.967); margin-top: 0; padding: 4rem 0 4rem 0; margin-bottom: 0;">
+
+    <div id="about">
+      <h1 class="aboutme">About Me</h1>
+      <p style="color: rgb(98, 98, 98); font-size: 20px;">
+        I'm a passionate web developer with 3+ years of experience creating digital solutions <br>
+        that make a difference.
+      </p>
+    </div>
+
+    <!-- Story and skills section: Split into story and education/certification boxes -->
+    <div class="storyStory" style="padding: 1rem 6rem;">
+      <div style="display: flex; justify-content: space-between; padding:0; gap: 3rem; box-sizing: border-box;">
+        
+        <!-- Left side: Developer's personal story and skills -->
+        <div class="mystory" style="width: 600px; padding: 2rem;">
+          <h2 class="front-back">My Story</h2>
+          <div style="font-size: 18px;">
+            I Started my journey in web development during college, 
+            where I discovered my passion for creating interactive and engaging web experiences. 
+            I love turning complex problems into simple, beautiful designs.
+            <br><br>
+            When I'm not coding, you can find me exploring new technologies, 
+            contributing to open-source projects, 
+            or sharing knowledge with the developer community.
+          </div>
+          <br>
+
+          <!-- Technical skills divided into Frontend and Backend -->
+          <div class="technical" style="display: flex; justify-content: flex-start; gap: 200px;">
+            <div style="width: 120px;">
+              <h2 class="front-back" style="color: rgb(58, 58, 58);">Frontend</h2>
+              <ul style="padding: 1px; width: 120px;">
+                <li>Html</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React & Next.js</li>
+              </ul>
+            </div>
+            <div style="width: 120px;">
+              <h2 class="front-back">Backend</h2>
+              <ul style="padding: 0%; width: 120px;">
+                <li>Node.js</li>
+                <li>Python/Django</li>
+                <li>PostgreSQL</li>
+                <li>AWS/Docker</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right side: Placeholder for education and certification timeline -->
+        <div class="education">
+          <div>
+            <h2>Education And Certificate</h2>
+            <!-- Placeholder timeline lines (visual elements only) -->
+             <div style="display: flex; gap: 1rem;">
+              <div style="background-color: rgb(0, 130, 245); height: 90px; width: 3px; "></div>
+              <div>
+                <span style="font-weight: bold;">Full-Stack Web Development BootCamp</span>
+              <p>Udemy</p>
+              <p>2022-2025</p>
+              </div>
+             </div>
+             <div style="display: flex; gap: 1rem;">
+              <div style="background-color: rgb(0, 130, 245); height: 90px; width: 3px; margin: 8px 0 8px 0;"></div>
+              <div>
+                <span style="font-weight: bold;">Mass Communication</span>
+              <p>Lagos State University</p>
+              <p>2023 - till date</p>
+              </div>
+             </div>
+             <div style="display: flex; gap: 1rem;">
+              <div style="background-color: rgb(0, 130, 245); height: 90px; width: 3px; "></div>
+              <div>
+                <span style="font-weight: bold;">Software Engineering</span>
+              <p>ALX software Programme</p>
+              <p>2023- dropout 2024</p>
+              </div>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services section: Overview of what the developer offers -->
+  <div id="services-container">
+    <div style="text-align: center;">
+      <h1 class="aboutme">Services</h1>
+      <p style="color: rgb(98, 98, 98); font-size: 20px;">
+        I offer comprehensive web development services to bring your ideas to life
+      </p>
+    </div>
+
+    <!-- Placeholder boxes for listing individual services -->
+    <div id="service-6">
+      <div class="the-services">
+        <h3>Web Development</h3>
+        <p>Custom websites and web applications built with modern technologies and best practices</p>
+        <span>Starting at $250</span> <br>
+        <button class="chooseButton" style="background-color: blue;">Choose This Service</button>
+      </div>
+      <div class="the-services">
+        <h3>Web Testing</h3>
+        <p>Testing your websites to ensure that it is alright to launch for users to use</p>
+        <span>Starting at $150</span> <br>
+        <button class="chooseButton" style="background-color: green;">Choose This Service</button>
+      </div>
+      <div class="the-services">
+        <h3>Web Development</h3>
+        <p>Custom websites and web applications built with modern technologies and best practices</p>
+        <span>Starting at $250</span> <br>
+        <button class="chooseButton" style="background-color: purple;">Choose This Service</button>
+      </div>
+      <div class="the-services">
+        <h3>Public Relations</h3>
+        <p>Consultations for relating with the pulics to maintain good public Image</p>
+        <span>Starting at $100</span> <br>
+        <button class="chooseButton" style="background-color: red;">Choose This Service</button>
+      </div>
+      <div class="the-services">
+        <h3>Advertising</h3>
+        <p>Writing Advert  copies to inform customers and prospects about your product to increase sales</p>
+        <span>Starting at $20</span> <br>
+        <button class="chooseButton" style="background-color: orange;">Choose This Service</button>
+      </div>
+      <div class="the-services">
+        <h3>Branding</h3>
+        <p>Creating custom unique identity for your brand to make it stand out among others</p>
+        <span>Starting at $50</span> <br>
+        <button class="chooseButton" style="background-color: rgb(230, 230, 90);">Choose This Service</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact section: Form to get in touch with the developer -->
+  <div id="contact">
+    <div style="text-align: center;">
+      <h1>Get In Touch</h1>
+      <p>Ready To Get Your Website Up And Running?</p>
+      <p>Let's Discuss How To Turn Your Dreams Into Reality</p>
+    </div>
+
+    <div class="getInTouch">
+      <div>
+        <h2>Send me a message</h2>
+
+        <!-- Container for the Name fields -->
+        <div style="display: flex; gap: 6px;">
+          <div>
+            <h3>First Name</h3>
+            <input type="text" id="firstName" placeholder="Fathiu">
+          </div>
+          <div>
+            <h3>Last Name</h3>
+            <input type="text" id="lastName" placeholder="Bello">
+          </div>
+        </div>
+        <!-- End of name fields -->
+
+        <!-- Email and service interest dropdown -->
+        <div>
+          <h3>Email</h3>
+          <input style="width: 100%; border: none;" type="email" id="services" placeholder="example@gmail.com">
+          <h3>Service interested in</h3>
+          <select style="width: 100%;" name="Services" id="services">
+            <option value="">Please Select a Service</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Consulting and Strategy">Consulting And Strategy</option>
+            <option value="pr">Public Relations</option>
+            <option value="ad">Advertising</option>
+          </select>
+        </div>
+
+        <!--Budget range Dropdown-->
+        <div>
+          <h3>Project Budget</h3>
+          <select style="width: 100%;" name="Services" id="services">
+            <option value="">Please Select a Budget</option>
+            <option value="Web Development">50,000 - 100,000</option>
+            <option value="Consulting and Strategy">100,000 - 250,000</option>
+            <option value="pr">250,000 - 500,000</option>
+            <option value="ad">500,000+</option>
+          </select>
+        </div>
+        <div>
+          <h3>Message</h3>
+          <textarea name="message" id="messageForDev"></textarea>
+          <button style="width: 100%; height: 2rem; border-radius: 6px; background-color:
+           rgb(62, 62, 225); color: white;">Send Message</button>
+        </div>
+      </div>
+
+      <!-- Right side of contact form: Placeholder for additional contact information -->
+      <div class="contactInformation">
+        <h2>Contact Information</h2>
+        <!-- You can add phone number, email, address, or social media links here -->
+         <div>
+          <div>
+            <h3 style="margin-top: 0.5rem;">Email</h3>
+            <p>fathiubello1@gmail.com</p>
+          </div>
+          <div>
+            <h3 style="margin-top: 0.5rem;">Phone</h3>
+            <p>+234 913 018 4308 </p>
+          </div>
+          <div>
+            <h3 style="margin-top: 0.5rem;">Location</h3>
+            <p>No. 3 Adarloye Street, Agbele, Grammar School, <br> Ikorodu Lagos, Nigeria</p>
+          </div>
+          <div>
+              <h3 style="margin-top: 0.5rem;">Response Time</h3>
+            <p>Within 24 Hours</p>
+            </div>
+          <div>
+            <div>
+              <h3 style="margin-top: 0.5rem;">Follow Me</h3>
+              <div>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+              </div>
+            </div>
+          </div>
+         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer section: Currently a placeholder with default styling -->
+  <footer style="background-color: rgb(2, 2, 4); height: 1rem; margin: 0; padding: 2rem 8rem; color: white;">
+    &copy;2025 Fathiu Bello. All rights Reserved.
+    <a style="text-decoration: none; margin-left: 43rem; color: white;" href="">Privacy Policy</a>
+    <a style="text-decoration: none; margin-left: 2rem; color: white;" href="">Terms Of Services</a>
+  </footer>
+</body>
+</html>
